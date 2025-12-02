@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Product list with cart</title>
+  <link rel="stylesheet" href="design.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <h1>Add To Cart Project</h1>
+    </div>
+    <div class="menus">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/hyazhar">Github</a>
+    </div>
+    <div class="hamburger-menu">
+      <i class="ri-menu-line" id="hamburger-icon"></i>
+  </div>
+</nav>
+  <div class="wrapper">
+    <div class="product-container">
+      <h1>Desserts</h1>
+      <div class="product-card">
+        <!-- item will go here dynamically -->
+      </div>
+    </div>
+    <div class="cart-container">
+     <div class="item-list">
+      <h2>Item Cart</h2>
+      <div class="items">
+       <div class="item-image">
+        <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="Product Image">
+       </div>
+       <div class="item-name">
+        <span class="name">Crème Brûlée</span>
+        <span class="item-category">Chocolate cake</span>
+       </div>
+       <div class="item-quantity">
+        <span class="quantity">0</span>
+       </div> 
+        <div class="item-price">
+          <span class="price">$0.00</span>
+      </div>
+      <div class="remove-item">
+        <i class="ri-delete-bin-6-line"></i>
+      </div>
+      </div>
+      
+     </div>
+     <div class="summary">
+      <h2>Cart Summary</h2>
+      <div class="total-items">
+        <span>Total Items:</span>
+        <span id="total-items">0</span>
+      </div>
+      <div class="total-price">
+        <span>Total Price:</span>
+        <span id="total-price">$0.00</span>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+     </div>
+  </div>
+  <!-- <script src="script.js"></script> -->
+   <script src="practice.js"></script>
+</body>
+</html>
